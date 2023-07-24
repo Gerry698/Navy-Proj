@@ -1,2 +1,2 @@
 # Navy-Proj
-Ben, Gerry, Jaden, Justin, Sophia
+Ben, Gerry, Jayden, Justin, Sophia
