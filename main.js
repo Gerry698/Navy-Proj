@@ -65,6 +65,13 @@ const themes = {
   
     const randomIndex = Math.floor(Math.random() * compliments.length);
     const compliment = compliments[randomIndex] + name + "!";
+      //show mr mike
+      const theme4Image = document.getElementById("mrmikeImage");
+        if (selectedTheme === "mrmike") {
+            theme4Image.classList.remove('hidden');
+        } else {
+            theme4Image.classList.add('hidden');
+        }
     return compliment;
   }
   
@@ -79,3 +86,4 @@ const themes = {
   // Event listener for the "Deal" button
   const dealButton = document.getElementById('dealButton');
   dealButton.addEventListener('click', displayCompliment);
+
