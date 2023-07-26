@@ -1,4 +1,23 @@
-// Arrays of compliments for each theme
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Arrays of compliments for each theme
 const themes = {
   default: [
     "You are amazing, ",
@@ -85,4 +104,3 @@ function displayCompliment() {
 // Event listener for the "Deal" button
 const dealButton = document.getElementById('dealButton');
 dealButton.addEventListener('click', displayCompliment);
-message.txt
