@@ -1,3 +1,6 @@
+//The Compliment thingy
+let complimentbank = [""]
+let mrmikecomplimentbank = ["You're cruising through this!", "Wow! You did that so quickly! That was magic!", "Ben bought cookies, you all can have a piece.", "Yay"]
 
 // Arrays of compliments for each theme
 const themes = {
@@ -61,7 +64,7 @@ const themes = {
     const compliments = themes[selectedTheme];
   
     const nameInput = document.getElementById('nameInput');
-    const name = nameInput.value || "Friend"; // Use "Friend" if no name is provided
+    const name = nameInput.value || "friend"; // Use "Friend" if no name is provided
   
     const randomIndex = Math.floor(Math.random() * compliments.length);
     const compliment = compliments[randomIndex] + name + "!";
@@ -78,12 +81,10 @@ const themes = {
   // Function to display the compliment on the webpage
   function displayCompliment() {
 
-    const complimentText = document.getElementById('complimentText');
-    complimentText.textContent = generateCompliment();
-  }
 
-  
-  // Event listener for the "Deal" button
-  const dealButton = document.getElementById('dealButton');
-  dealButton.addEventListener('click', displayCompliment);
+
+
+//game
+
+
 
