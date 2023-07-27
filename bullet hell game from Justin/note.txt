@@ -1,0 +1,15 @@
+an array with TA to change wit level
+create a better level system /
+put a better background 
+add a esc button(or anything similar) to redirect to home page /
+
+
+
+incase
+  
+    if (bullets[i].y = 0) {
+      touch++;
+    } else if (bullets[i].y < canvas.height && touch == 0) {
+      touch = 0;
+    }
+    if (touch == 0) {

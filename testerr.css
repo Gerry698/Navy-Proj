@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(29, 29, 31);
+    margin: 0;
+    animation-name: start;
+    animation-duration: 1500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes start{
+    from{
+        opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }
+}
+
+#header {
+    color: azure;
+    height: 15%;
+    background-color: rgb(31, 42, 52);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    cursor: url(./image/p.png) 0 0, pointer;
+}
+
+.menu:hover {
+    animation-name: menuColor; 
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes menuColor{
+    from{
+        background-color: rgb(31, 42, 52);
+        color: azure;
+    }
+    to{
+        background-color: rgb(58, 64, 99);
+        color:rgb(255, 245, 194);
+    }
+}
+#title {
+    flex: 3;
+
+}
+
+.menu {
+    flex: 5;
+    padding: 20PX;
+    animation: menuBack 500ms forwards;
+}
+@keyframes menuBack{
+    from{
+        background-color: rgb(58, 64, 99);
+        color:rgb(255, 245, 194);
+    }
+    to{
+        background-color: rgb(31, 42, 52);
+        color: azure;
+    }
+}
+
+
+.bodycontent{
+    color:#f1f1f1;
+    animation-name: float;
+    animation-delay: 300ms;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes float {
+    from{
+        position: relative;
+        margin-top: 50px;
+        opacity: 0;
+    }
+    to{
+        position: relative;
+        margin-top: 0px;
+        opacity: 1;
+    }
+    
+}
+
+#bigtitle{
+    font-size: 40px;
+    grid-area: bt;
+}
+
+#subtitle{
+    font-size: 32px;
+    grid-area: st;
+}
+
+#line1{
+    font-size: 27px;
+    grid-area: l1;
+}
+
+#line2{
+    font-size: 25px;
+    grid-area: l2;
+}
+
+#bottomRight {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;;
+    z-index: 10;
+    border: 0;
+    background: #273633a5;
+    width: 200px;
+    height: 40px;
+    color: #f1f1f1;
+    text-align: center;
+    align-items: center;
+}
+
+.box { 
+    margin: 0; 
+    flex:1;
+}
+
+.list { 
+    width: 30px; 
+    height: 30px; 
+    align-items: center;
+    position: relative; 
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.list:before, .list:after { 
+    content: ""; 
+    display: block; 
+    width: 30px; 
+    height: 4.0px; 
+    background: #ffd9d999; 
+    border-radius: 2.4px; 
+    position: absolute; 
+    left: 0; 
+    -webkit-transition: all 300ms ease-in-out; 
+    transition: all 300ms ease-in-out; 
+}
+
+.list:before { 
+    top: 1.5px; 
+    box-shadow: 0 11.1px #ffd9d999; 
+}
+
+.list:after { 
+    bottom: 1.5px; 
+}
+
+.list:hover:before { 
+    top: 12.6px; 
+    box-shadow: none; 
+    -webkit-transform: rotate(225deg); 
+    transform: rotate(225deg); 
+}
+
+.list:hover:after { 
+    bottom: 12.6px; 
+    -webkit-transform: rotate(135deg); 
+    transform: rotate(135deg); 
+}
