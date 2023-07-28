@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    background-image: url(bg.jpg);
+    /* add an bg if you want cuz i dont now what to add */
+}
+  
+#gameCanvas {
+    border: 1px solid #000;
+    display: block;
+    margin: 0 auto;
+    /* background-image:url(ezgif-1-eb6c4a5152.gif); */
+    }
+#character {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    /* background: red; */
+    border-radius: 50%; /* radius = 21 */
+}
+/* ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 10px 0;
+} */
+h2 {
+    color: var(--accent1);
+    line-height: 0.9;
+    text-align: center;
+}
+.control {
+    color: var(--accent2);
+    font-weight: bold;
+}
+/* #controls {
+    border: 1px solid #000;
+    display: block;
+    margin: auto;
+    width: 100;
+    height: 100;
+    align-items: baseline;
+} */
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  

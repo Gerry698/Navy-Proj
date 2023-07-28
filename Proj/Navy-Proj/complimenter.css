@@ -1,0 +1,29 @@
+body {
+  /*Replace 'path/to/your/image.jpg' with the path to your desired background image*/
+  background-color: navy;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+select, input, button {
+  margin-bottom: 10px;
+}
+
+#complimentText {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Add this CSS class */
+.hidden {
+  display: none;
+}

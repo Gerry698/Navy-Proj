@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 1fr,1fr;
+
+}
+
+#page{
+  cursor: url(../image/mouse.png) 0 0, pointer;
+  width: 640px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 
+    "tp tp tp tp tp"
+    "tp tp tp tp tp"
+    "lf bt bt bt rg"
+    "lf st st st rg"
+    "lf l1 l1 l1 rg"
+    "lf l2 l2 l2 rg"
+    "bo bo bo bo bo"
+    "bo bo bo bo bo";
+}
+
+#akCanvas {
+  position: fixed;
+  transition: left 1s;
+  cursor: url(../image/mouse.png) 0 0, pointer;
+}
+@media (min-width: 750px) {
+  #akCanvas {
+    left: 50%;
+  }
+}
+@media (max-width: 750px) {
+  #akCanvas {
+    left: 35%;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 550px) {
+  #akCanvas {
+    left: 10%;
+    opacity: 0.7;
+  }
+}
+
+
